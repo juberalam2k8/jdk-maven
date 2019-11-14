@@ -6,7 +6,7 @@ node{
        def mvnHome = tool name: 'Maven', type: 'maven'
        tool name: 'JAVA_HOME', type: 'jdk'
        bat "${mvnHome}/bin/mvn clean package"
-       echo %JAVA_HOME%
+       
        }
 
 
