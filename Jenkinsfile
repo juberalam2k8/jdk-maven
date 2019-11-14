@@ -4,7 +4,7 @@ node{
        }
      stage('Compile and Package'){
        tool name: 'Maven', type: 'maven'
-       mvn package
+       $MAVEN_HOME/bin/mvn package
        }
 
 
