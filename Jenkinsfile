@@ -4,7 +4,7 @@ node{
        }
      stage('Compile and Package'){
        tool name: 'Maven', type: 'maven'
-       C:\Users\jualam.PARTNERS\Downloads\apache-maven-3.6.2-bin\apache-maven-3.6.2\bin/mvn package
+       mvn package
        }
 
 
