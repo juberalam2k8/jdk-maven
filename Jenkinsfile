@@ -4,7 +4,7 @@ node{
        }
      stage('Compile and Package'){
        tool name: 'Maven', type: 'maven'
-       call mvn package
+        bat "mvn clean package"
        }
 
 
