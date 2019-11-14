@@ -4,8 +4,9 @@ node{
        }
      stage('Compile and Package'){
        def mvnHome = tool name: 'Maven', type: 'maven'
-       tool name: 'JAVA_HOME', type: 'jdk'
+       def javaHome = tool name: 'JAVA_HOME', type: 'jdk'
        bat "${mvnHome}/bin/mvn clean package"
+       bat "${javaHome}/bin/java -version"
        }
 
 
