@@ -3,8 +3,8 @@ node{
        git 'https://github.com/juberalam2k8/jdk-maven'
        }
      stage('Compile and Package'){
-       def mvnHome = tool name: 'Maven', type: 'maven'
-       set mvnHome/bin/mvn package
+       tool name: 'Maven', type: 'maven'
+       C:\Users\jualam.PARTNERS\Downloads\apache-maven-3.6.2-bin\apache-maven-3.6.2\bin/mvn package
        }
 
 
